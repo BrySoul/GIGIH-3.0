@@ -3,7 +3,7 @@ const express = require('express');
 const connection = require("./db");
 const app = express();
 
-const connection()
+connection()
 
-const port = process.env.PORT||8080;
-app.listen(port, console.log(`Listening on port & {port}...`))
+const port = process.env.PORT || 8080;
+app.listen(port, console.log(`Listening on port ${port}...`))
